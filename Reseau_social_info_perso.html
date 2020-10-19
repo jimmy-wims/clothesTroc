@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="mycss/style_info_perso.css" />
+
+    <title>Information Personnelles</title>
+  </head>
+  <body>
+
+    <form>
+    <fieldset class="cadre">
+    	<legend>
+    		Identification
+    	</legend>
+    	<table>
+    		<tr>
+    			<td>
+    				N° Partenaire<br/>
+    				<input type="text"name="numPartenaire"/>
+    			<td>
+    			<td>
+    				Raison sociele<br/>
+    				<input type="text" name="raisonSociale"/>
+    			</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				Code GTA<br/>
+    				<input type="text"name="codeGta"/>
+    			<td>
+    			<td>
+    				Code ACAM<br/>
+    				<input type="text" name="codeAcam"/>
+    			</td>
+    		</tr>
+    	</table>
+    </fieldset>
+    </form>
+    <div class="container" >
+      <div class="row" id="info_perso">
+        <div class="col-md-4"  > </div>
+        <div class="col-md-6"  >
+          <div class="row">
+            <div class="col-md-8">
+              <h3>Informations Personnelles</h3>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+          </div>
+          <hr>
+          <!--make another column for textbox and label -->
+          <div class="form-register" id="form-register" >
+
+            <form class="register-form">
+            <div class="row">
+              <!--<div class="col-lg-2" ><label class="label col-md-2 controlè-label">Numero</label></div>
+              <div class="col-lg-1"></div> -->
+              <div class="col-lg-11">
+                <input type="text" name="numero_info" class="form-control" placeholder="Numero portable" >
+              </div>
+              <div class="col-lg-1"><i class="fas fa-mobile-alt"></i></div>
+            </div>
+            <div class="row">
+              <!--<div class="col-lg-2" ><label class="label col-md-2 controlè-label">Métier</label></div>
+              <div class="col-lg-1"></div> -->
+              <div class="col-lg-11">
+                <input type="text" name="metier_info" class="form-control" placeholder="Metier">
+              </div>
+              <div class="col-lg-1"><i class="fas fa-user-plus"></i></div>
+            </div>
+            <div class="row">
+            <!--  <div class="col-lg-2" ><label class="label col-md-2 controlè-label">Gendre</label></div>
+              <div class="col-lg-1"></div> -->
+              <div class="col-lg-11">
+                <select class="form-control" name="gendre" id="gendre">
+                  <option value="Gendre_info" selected="selected"></option>
+                  <option value="Femelle">Masculin</option>
+                  <option value="Male">Féminin</option>
+                  <option value="Indetermine">Indéterminé</option>
+                </select>
+              </div>
+              <div class="col-lg-1"><i class="fas fa-transgender-alt"></i></div>
+            </div>
+            <div class="row">
+              <!--<div class="col-lg-2" ><label class="label col-md-2 controlè-label">Message</label></div>
+              <div class="col-lg-1"></div> -->
+              <div class="col-lg-11">
+                <textarea  rows="3" class="form-control" cols="55"  placeholder="  Message profil..." id="message_textarea"></textarea>
+              </div>
+              <div class="col-lg-1"><i class="fas fa-comments"></i></div>
+            </div>
+
+            <div class="row">
+              <!--<div class="col-lg-2" ><label class="label col-md-2 controlè-label">Image</label></div>-->
+              <div class="col-lg-5"></div>
+              <div class="col-lg-3">
+                <input type="file" name="file_image"  id="file1" accept="image/*" capture style="display:none"/>
+                <!--<img src="http://macgroup.org/blog/wp-content/uploads/2011/10/iphone-camera-icon-150x150.jpg" id="upfile1" style="cursor:pointer" /> -->
+                <div id="upfile1" style="cursor:pointer"><i class="fa fa-camera-retro"></i></div>
+                <!--<img src="images/img2.png" id="upfile1" style="cursor:pointer" width="80px" height="80px" />-->
+              </div>
+              <div class="col-lg-4"></div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-xs-4 col-lg-4" ></div>
+              <div class="col-xs-4 col-lg-3" ><button type="button" id="submit_enregister" name="submit_register" class="btn btn-primary">Enregistrer</button></div>
+              <div class="col-xs-4 col-lg-4" ></div>
+            </div>
+
+
+          </form>
+         </div>
+      </div>
+      <div class="col-md-2"  > </div>
+    </div>
+
+
+    <script src="jQuery/jquery.min.js"></script>
+    <script src="myjs/myjs.js"></script>
+  </body>
+</html>
